@@ -32,6 +32,9 @@ def get_linkedin_data():
         "data": str(soup)
     }
 
+@app.route('/api/contact')
+def contact_me():
+    print()
 
 if __name__ == "__main__":
     app.run(debug=True)
