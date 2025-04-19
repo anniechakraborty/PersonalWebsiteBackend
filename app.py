@@ -22,20 +22,20 @@ def get_medium_posts():
         })
     return jsonify(posts)
 
-@app.route('/api/profile')
-def get_linkedin_data():
-    url = "enter url"
-    page = requests.get(url)
-    soup = BeautifulSoup(page.text, 'html')
-    print(soup)
-    return {
-        "data": str(soup)
-    }
+# @app.route('/api/profile')
+# def get_linkedin_data():
+#     url = "enter url"
+#     page = requests.get(url)
+#     soup = BeautifulSoup(page.text, 'html')
+#     return {
+#         "data": str(soup)
+#     }
 
-@app.route('/api/contact')
-def contact_me():
-    print()
+# @app.route('/api/contact')
+# def contact_me():
+#     print()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run()
 
